@@ -13,8 +13,7 @@ public static class Extensions
         var executingAssembly = Assembly.GetExecutingAssembly();
         services.AddAutoMapper(executingAssembly);
 
-        //services.AddScoped<IBabyRepository, BabyRepository>();
-        //services.AddScoped<IApgarScoreRepository, ApgarScoreRepository>();
+        //services.AddScoped<IProjectRepository, ProjectRepository>();
 
         /// <summary>
         /// Dodanie kontekstu połączenia z bazą danych do domyślnego kontetenera IoC

@@ -3,6 +3,9 @@ using PMS.Models.Entities;
 
 namespace PMS.Repositories.DBOs.Convert;
 
+/// <summary>
+/// Profil mapowania modeli na modele DBO.
+/// </summary>
 public class MappingProfiles : Profile
 {
     public MappingProfiles()

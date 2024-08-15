@@ -1,14 +1,52 @@
 ﻿namespace PMS.Models.Entities;
 
+/// <summary>
+/// Reprezentacja modelu zadania.
+/// </summary>
 public class Assignment
 {
+    /// <summary>
+    /// Identyfikator zadania.
+    /// </summary>
     public Guid Id { get; set; }
+
+    /// <summary>
+    /// Nazwa zadania.
+    /// </summary>
     public string Name { get; set; }
+
+    /// <summary>
+    /// Opis zadania.
+    /// </summary>
     public string Description { get; set; }
-    public Guid AssignedPersonId { get; set; }
+
+    /// <summary>
+    /// Osoby przypisane do zadania.
+    /// </summary>
+    public ICollection<Person> People { get; set; }
+
+    /// <summary>
+    /// Priorytet zadania.
+    /// </summary>
     public Priority Priority { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public Status Status { get; set; } = Status.NotStarted;
+
+    /// <summary>
+    /// Czas utworzenia zadania.
+    /// </summary>
+    public DateTime CreatedAt { get; set; }
+
+    /// <summary>
+    /// Status zadania.
+    /// </summary>
+    public Status Status { get; set; }
+
+    /// <summary>
+    /// Czas zakończenia zadania.
+    /// </summary>
     public DateTime? CompletedAt { get; set; }
-    public List<Comment> Comments { get; set; } = new List<Comment>();
+
+    /// <summary>
+    /// Lista komentarzy do zadania.
+    /// </summary>
+    public List<Comment> Comments { get; set; }
 }
