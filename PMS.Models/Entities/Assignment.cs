@@ -6,17 +6,17 @@
 public class Assignment
 {
     /// <summary>
-    /// Identyfikator zadania.
+    /// Identyfikator
     /// </summary>
     public Guid Id { get; set; }
 
     /// <summary>
-    /// Nazwa zadania.
+    /// Nazwa
     /// </summary>
     public string Name { get; set; }
 
     /// <summary>
-    /// Opis zadania.
+    /// Opis
     /// </summary>
     public string Description { get; set; }
 
@@ -26,27 +26,27 @@ public class Assignment
     public ICollection<Person> People { get; set; }
 
     /// <summary>
-    /// Priorytet zadania.
+    /// Priorytet
     /// </summary>
     public Priority Priority { get; set; }
 
     /// <summary>
-    /// Czas utworzenia zadania.
+    /// Czas utworzenia
     /// </summary>
     public DateTime CreatedAt { get; set; }
 
     /// <summary>
-    /// Status zadania.
+    /// Status
     /// </summary>
     public Status Status { get; set; }
 
     /// <summary>
-    /// Czas zakończenia zadania.
+    /// Czas zakończenia
     /// </summary>
     public DateTime? CompletedAt { get; set; }
 
     /// <summary>
-    /// Lista komentarzy do zadania.
+    /// Lista komentarzy.
     /// </summary>
     public List<Comment> Comments { get; set; }
 }

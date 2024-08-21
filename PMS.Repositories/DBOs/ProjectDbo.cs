@@ -8,17 +8,17 @@ namespace PMS.Repositories.DBOs;
 public class ProjectDbo
 {
     /// <summary>
-    /// Identyfikator projektu.
+    /// Identyfikator
     /// </summary>
     public Guid Id { get; set; }
 
     /// <summary>
-    /// Nazwa projektu.
+    /// Nazwa
     /// </summary>
     public string Name { get; set; }
 
     /// <summary>
-    /// Opis projektu.
+    /// Opis
     /// </summary>
     public string Description { get; set; }
 
@@ -28,27 +28,27 @@ public class ProjectDbo
     public List<Guid> TaskIds { get; set; }
 
     /// <summary>
-    /// Priorytet projektu.
+    /// Priorytet
     /// </summary>
     public Priority Priority { get; set; }
 
     /// <summary>
-    /// Czas utworzenia projektu.
+    /// Czas utworzenia
     /// </summary>
     public DateTime CreatedAt { get; set; }
 
     /// <summary>
-    /// Status projektu.
+    /// Status
     /// </summary>
     public Status Status { get; set; }
 
     /// <summary>
-    /// Czas zakończenia projektu.
+    /// Czas zakończenia
     /// </summary>
     public DateTime? CompletedAt { get; set; }
 
     /// <summary>
-    /// Lista komentarzy do projektu.
+    /// Lista komentarzy.
     /// </summary>
     public List<Comment> Comments { get; set; }
 }

@@ -5,7 +5,7 @@
 /// </summary>
 /// <typeparam name="TEntity">Parametr generyczny encji.</typeparam>
 /// <typeparam name="TId">Parametr generyczny id.</typeparam>
-public interface IRepository<TEntity, TId> 
+public interface IAbstractRepository<TEntity, TId> 
 {
     /// <summary>
     /// Metoda pobierająca wszystkie wystąpienia danej encji.
@@ -24,14 +24,12 @@ public interface IRepository<TEntity, TId>
     /// Metoda dodająca encję.
     /// </summary>
     /// <param name="entity">Encja</param>
-    /// <returns>Nowa encja.</returns>
     Task AddAsync(TEntity entity);
 
     /// <summary>
     /// Metoda aktualizująca encję.
     /// </summary>
     /// <param name="entity">Encja</param>
-    /// <returns>Zaktualizowana encja.</returns>
     Task UpdateAsync(TEntity entity);
 
     /// <summary>

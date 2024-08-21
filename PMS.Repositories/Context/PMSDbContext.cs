@@ -8,7 +8,7 @@ namespace PMS.Repositories.Context;
 /// <summary>
 /// Klasa kontekstu reprezentująca połączenie z bazą danych
 /// </summary>
-internal class PMSDbContext : DbContext
+public class PMSDbContext : DbContext
 {
     public PMSDbContext(DbContextOptions<PMSDbContext> options) : base(options)
     {
@@ -22,20 +22,20 @@ internal class PMSDbContext : DbContext
     /// <summary>
     /// Właściwość DbSet dla modelu ProjectDbo
     /// </summary>
-    public DbSet<ProjectDbo> ProjectDbos { get; set; }
+    public DbSet<ProjectDbo> Projects { get; set; }
 
     /// <summary>
     /// Właściwość DbSet dla modelu AssignmentDbo
     /// </summary>
-    public DbSet<AssignmentDbo> AssignmentDbos { get; set; }
+    public DbSet<AssignmentDbo> Assignments { get; set; }
 
     /// <summary>
     /// Właściwość DbSet dla modelu PersonDbo
     /// </summary>
-    public DbSet<PersonDbo> PersonDbos { get; set; }
+    public DbSet<PersonDbo> Persons { get; set; }
 
     /// <summary>
     /// Właściwość DbSet dla modelu CommentDbo
     /// </summary>
-    public DbSet<CommentDbo> CommentDbos { get; set; }
+    public DbSet<CommentDbo> Comments { get; set; }
 }

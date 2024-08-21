@@ -6,17 +6,17 @@
 public class Comment
 {
     /// <summary>
-    /// Identyfikator komentarza.
+    /// Identyfikator
     /// </summary>
     public Guid Id { get; set; }
     
     /// <summary>
-    /// Treść komentarza.
+    /// Treść
     /// </summary>
     public string Text { get; set; }
 
     /// <summary>
-    /// Czas utworzenia komentarza.
+    /// Czas utworzenia
     /// </summary>
     public DateTime CreatedAt { get; set; }
 }

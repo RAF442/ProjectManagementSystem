@@ -8,32 +8,32 @@ namespace PMS.Models.Entities;
 public class Person
 {
     /// <summary>
-    /// Identyfikator osoby.
+    /// Identyfikator
     /// </summary>
     public Guid Id { get; set; }
 
     /// <summary>
-    /// Imię osoby.
+    /// Imię
     /// </summary>
     public string FirstName { get; set; }
 
     /// <summary>
-    /// Nazwisko osoby.
+    /// Nazwisko
     /// </summary>
     public string LastName { get; set; }
 
     /// <summary>
-    /// Email osoby.
+    /// Email
     /// </summary>
     public string Email { get; set; }
 
     /// <summary>
-    /// Numer telefonu osoby.
+    /// Numer telefonu
     /// </summary>
     public string PhoneNumber { get; set; }
 
     /// <summary>
-    /// Stanowisko osoby.
+    /// Stanowisko
     /// </summary>
     public string Position { get; set; }
 }

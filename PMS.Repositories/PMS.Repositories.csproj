@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	  <Description>Zawiera modele Dbo reprezentujące modele w bazie danych, 
+	  konwerter modeli na obiekty Dbo i na odwrót, 
+	  repozytorium generyczne z operacjami dla wszystkich encji.</Description>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

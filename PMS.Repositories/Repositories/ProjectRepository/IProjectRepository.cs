@@ -7,7 +7,7 @@ namespace PMS.Repositories.Repositories.ProjectRepository;
 /// <summary>
 /// Zbiór akcji wykonywanych na repozytorium projektu.
 /// </summary>
-public interface IProjectRepository : IRepository<Project, Guid>
+public interface IProjectRepository : IAbstractRepository<Project, Guid>
 {
     
 }
